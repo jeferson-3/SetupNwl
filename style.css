@@ -1,0 +1,137 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600;700&family=Roboto+Mono:wght@700&display=swap');
+
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+}
+
+body{
+  background-color: #09090A;
+  color: white;
+  margin: 30px auto;
+
+  height: 100vh;
+}
+/*{
+  border: 1px solid red;
+}*/
+
+ .ani-button {
+  background-color: #141413;
+  padding: 16px 24px;
+  border-radius: 8px;
+  border: 1px solid #8629ff;
+  color: white;
+
+  display: flex;
+  align-items: center;
+  gap: 1.2em;
+
+  font-family: 'Inter', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 125%;
+  cursor: pointer;
+ }
+ .ani-button:hover{
+  background-color: #8629ff;
+  color: white;
+  transition: 0.4s ease-in;
+ }
+
+ .ani-button:hover img{
+  background: white;
+  transition: 0.3s ease-in;
+  border-radius: 50%
+ }
+
+ 
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 48px;
+  width: 100%;
+
+  position: fixed;
+  background-color: #09090A;;
+
+  
+
+}
+#form-habits {
+display: flex;
+padding: 182px 48px 48px;
+width: fit-content;
+
+}
+
+.habits {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column ;
+  gap: 20px;
+}
+
+.habit{
+   width: 64px;
+   height: 64px;
+
+   font-size: 32px;
+
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+
+.days {
+ display: flex;
+ margin-left: 32px;
+ gap: 38px;
+}
+
+.day {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2em;
+}
+
+.day div{
+   margin-bottom: 8px;
+   font-family: 'Roboto Mono', sans-serif;
+   font-size: 20px;
+   line-height: 125%;
+   color: #A1A1AA;
+   text-align: center;
+}
+
+input {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 64px;
+  height: 64px;
+  border: 2px solid #27272A;
+  border-radius: 8px;
+
+  background: #18181B;
+}
+input:checked {
+  background: #8b5cf6;
+  border: 2px solid #A78BFA
+}
+input:hover {
+  background-color: #8B5Cf6;
+}
+
+@media(max-width: 570px){
+  button h3{
+  display: none;
+ }
+}
