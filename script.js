@@ -11,7 +11,9 @@ form.addEventListener("change", save)
 
 function add() {
 const today = new Date().toLocaleDateString("pt-br").slice(0, 5);
-const dayExists = nlwSetup.dayExists(today)
+
+const dayExists = nlwSetup.dayExists(today);
+
 
 if (dayExists) {
   alert('Dia ja incluso 🛑');
@@ -23,7 +25,7 @@ if (dayExists) {
 }
 
 function save() {
-  localStorage.setItem('Explore@habits', JSON.stringify(nlwSetup.data));
+ localStorage.setItem('Explore@habits', JSON.stringify(nlwSetup.data));
 }
 
 const data = JSON.parse(localStorage.getItem("Explore@habits")) || {};
